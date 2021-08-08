@@ -1,1 +1,188 @@
 /* Other rules */
+.body {
+  background-color: black;
+}
+body {
+  font-family: "Marvel", sans-serif;
+  height: 2000px;
+  background-color: black;
+}
+
+.header {
+  display: flex;
+  width: 1024px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  background-color: black;
+}
+.header img {
+  height: 100px;
+}
+
+.headerButtons {
+  font-family: "Bebas Neue", cursive;
+  color: red;
+  font-size: 28px;
+  border-radius: 8px;
+  background-color: white;
+  margin-right: 40px;
+  padding: 7px;
+  border: 1px solid red;
+  text-decoration: none;
+}
+.headerButtons :hover {
+  cursor: pointer;
+}
+.charac {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 1024px;
+  margin: 0 auto;
+  background-color: black;
+  border: 1px solid red;
+  color: white;
+  padding-bottom: 20px;
+}
+.Page {
+  background-color: black;
+  margin-bottom: 10px;
+}
+.Pageform {
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  border: 1px solid red;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  height: 150px;
+}
+.Pageform input {
+  width: 300px;
+  height: 30px;
+  font-family: inherit;
+  border-radius: 5px;
+  color: grey;
+}
+.Pageform button {
+  font-family: "Roboto";
+  border-color: white;
+  border-radius: 5px;
+  color: red;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 3px;
+  height: 34px;
+  margin-left: 10px;
+}
+
+.charac img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+.unit {
+  width: 250px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  margin: 1px solid red;
+}
+
+.unit p {
+  font-size: 12px;
+  height: 250px;
+  overflow: hidden;
+
+  color: white;
+}
+
+.unit button {
+  font-family: "Roboto";
+  border-color: white;
+  border-radius: 5px;
+  color: red;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination {
+  display: flex;
+  width: 1024px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  border: 1px solid red;
+  border-bottom: 10px;
+  margin-top: 10px;
+}
+.pagination button {
+  font-family: "Roboto";
+  border-color: white;
+  border-radius: 5px;
+  color: red;
+
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 3px;
+}
+
+.Page h1 {
+  color: red;
+  width: 1024px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+main {
+  background-color: black;
+}
+
+.home {
+  background-image: url(img/guardians-of-the-galaxy-and-the-avengers-team-up-in-infinity-war.jpg);
+  height: 700px;
+  width: 1400px;
+  background-repeat: no-repeat;
+  background-color: rgb(223, 46, 46);
+  margin: 0 auto;
+  background-blend-mode: darken;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home h1 {
+  font-family: "Bangers", cursive;
+  color: white;
+  font-size: 66px;
+  margin-right: 50px;
+}
+.homeButtons {
+  font-family: "Bangers", cursive;
+  color: black;
+  font-size: 28px;
+  border-radius: 8px;
+  background-color: white;
+  margin-right: 40px;
+  padding: 7px;
+  border: 1px solid red;
+  text-decoration: none;
+}
+.icon {
+  color: red;
+  font-size: 35px;
+}
