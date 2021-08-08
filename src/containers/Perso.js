@@ -12,7 +12,7 @@ function Perso() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://marvel-backend123.herokuapp.com/comics/${characterId}`
+          `http://localhost:4000/comics/${characterId}`
         );
         console.log(response.data);
         setData(response.data);

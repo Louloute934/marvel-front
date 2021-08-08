@@ -12,7 +12,7 @@ function Comics({ favComic, setFavComic }) {
     event.preventDefault();
     try {
       const response = await axios.get(
-        `https://marvel-backend123.herokuapp.com/comics?title=${title}`
+        `http://localhost:4000/comics?title=${title}`
       );
       console.log(response.data);
       setData(response.data);
@@ -24,9 +24,7 @@ function Comics({ favComic, setFavComic }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(
-          `https://marvel-backend123.herokuapp.com/comics?title`
-        );
+        const response = await axios.get(`http://localhost:4000/comics?title`);
         console.log(response.data);
         setData(response.data);
         setIsLoading(false);
@@ -85,7 +83,7 @@ function Comics({ favComic, setFavComic }) {
           <button
             onClick={async () => {
               const response = await axios.get(
-                `https://marvel-backend123.herokuapp.com/comics?title=${title}&skip=${
+                `http://localhost:4000/comics?title=${title}&skip=${
                   counter - 100
                 }`
               );
@@ -101,7 +99,7 @@ function Comics({ favComic, setFavComic }) {
         <button
           onClick={async () => {
             const response = await axios.get(
-              `https://marvel-backend123.herokuapp.com/comics?title=${title}&skip=${
+              `http://localhost:4000/comics?title=${title}&skip=${
                 counter + 100
               }`
             );
