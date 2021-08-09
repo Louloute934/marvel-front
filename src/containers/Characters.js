@@ -15,7 +15,7 @@ function Characters({ favPerso, setFavPerso }) {
     event.preventDefault();
     try {
       const response = await axios.get(
-        `http://localhost:4000/characters?name=${name}`
+        `https://marvel-backend123.herokuapp.com/characters?name=${name}`
       );
       console.log(response.data);
       setData(response.data);
@@ -28,7 +28,7 @@ function Characters({ favPerso, setFavPerso }) {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4000/characters?name`
+          `https://marvel-backend123.herokuapp.com/characters?name`
         );
         //console.log(response.data);
         setData(response.data);
@@ -101,7 +101,7 @@ function Characters({ favPerso, setFavPerso }) {
             onClick={async () => {
               if (name) {
                 const response = await axios.get(
-                  `http://localhost:4000/characters?name=${name}&skip=${
+                  `https://marvel-backend123.herokuapp.com/characters?name=${name}&skip=${
                     counter - 100
                   }`
                 );
@@ -110,7 +110,9 @@ function Characters({ favPerso, setFavPerso }) {
                 setData(response.data);
               } else {
                 const response = await axios.get(
-                  `http://localhost:4000/characters?skip=${counter - 100}`
+                  `https://marvel-backend123.herokuapp.com/characters?skip=${
+                    counter - 100
+                  }`
                 );
                 setCounter(counter - 100);
                 console.log(response.data);
@@ -125,7 +127,7 @@ function Characters({ favPerso, setFavPerso }) {
         <button
           onClick={async () => {
             const response = await axios.get(
-              `http://localhost:4000/characters?name=${name}&skip=${
+              `https://marvel-backend123.herokuapp.com/characters?name=${name}&skip=${
                 counter + 100
               }`
             );
